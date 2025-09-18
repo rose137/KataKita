@@ -1,6 +1,7 @@
 package com.example.katakita.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.example.katakita.R;
+import com.example.katakita.chat.ChatDetailActivity;
 import com.example.katakita.model.ChatItemModel;
 
 import java.util.List;
@@ -63,6 +65,15 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ChatViewHolder
         } else {
             holder.unreadCount.setVisibility(View.GONE);
         }
+
+        //  klik listener
+        holder.itemView.setOnClickListener(v -> {
+            Intent intent = new Intent(context, ChatDetailActivity.class);
+            intent.putExtra("name", chat.getName());
+            intent.putExtra("profileImage", chat.getProfileImageResId());
+            // Tambahkan data lain sesuai kebutuhan
+            context.startActivity(intent);
+        });
 
     }
 

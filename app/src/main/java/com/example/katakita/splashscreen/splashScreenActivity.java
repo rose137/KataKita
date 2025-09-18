@@ -11,6 +11,7 @@ import android.widget.ImageView;
 
 import com.example.katakita.MainActivity;
 import com.example.katakita.R;
+import com.example.katakita.chat.chatActivity;
 
 public class splashScreenActivity extends AppCompatActivity {
 
@@ -29,7 +30,7 @@ public class splashScreenActivity extends AppCompatActivity {
         logo.startAnimation(scaleUp);
         // Delay 3 detik sebelum pindah ke MainActivity
         new Handler().postDelayed(() -> {
-            startActivity(new Intent(splashScreenActivity.this, viewActivity.class));
+            startActivity(new Intent(splashScreenActivity.this, chatActivity.class));
             finish(); // agar tidak kembali ke splash
         }, 3000);
     }
