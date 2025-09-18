@@ -15,28 +15,28 @@ public class StatusRepository {
 
         list.add(new UserStatusModel(
                 "Rina",
-                "https://example.com/profile/rina.jpg",
+                "https://raw.githubusercontent.com/rose137/KataKita/refs/heads/main/assets/anya1.jpg",
                 Arrays.asList(
-                        new StatusContentModel("https://example.com/status/rina_1.jpg", System.currentTimeMillis() - 100000),
-                        new StatusContentModel("https://example.com/status/rina_2.jpg", System.currentTimeMillis() - 50000)
+                        new StatusContentModel("https://raw.githubusercontent.com/rose137/KataKita/refs/heads/main/assets/anya1.jpg", System.currentTimeMillis() - 100000),
+                        new StatusContentModel("https://raw.githubusercontent.com/rose137/KataKita/refs/heads/main/assets/anya2.jpg", System.currentTimeMillis() - 50000)
                 )
         ));
 
         list.add(new UserStatusModel(
                 "Budi",
-                "https://example.com/profile/budi.jpg",
+                "https://raw.githubusercontent.com/rose137/KataKita/refs/heads/main/assets/nezu1.jpg",
                 Arrays.asList(
-                        new StatusContentModel("https://example.com/status/budi_1.jpg", System.currentTimeMillis() - 200000)
+                        new StatusContentModel("https://raw.githubusercontent.com/rose137/KataKita/refs/heads/main/assets/nezu1.jpg", System.currentTimeMillis() - 200000)
                 )
         ));
 
         list.add(new UserStatusModel(
                 "Sari",
-                "https://example.com/profile/sari.jpg",
+                "https://raw.githubusercontent.com/rose137/KataKita/refs/heads/main/assets/kafe1.jpg",
                 Arrays.asList(
-                        new StatusContentModel("https://example.com/status/sari_1.jpg", System.currentTimeMillis() - 300000),
-                        new StatusContentModel("https://example.com/status/sari_2.jpg", System.currentTimeMillis() - 200000),
-                        new StatusContentModel("https://example.com/status/sari_3.jpg", System.currentTimeMillis() - 100000)
+                        new StatusContentModel("https://raw.githubusercontent.com/rose137/KataKita/refs/heads/main/assets/kafe1.jpg", System.currentTimeMillis() - 300000),
+                        new StatusContentModel("https://raw.githubusercontent.com/rose137/KataKita/refs/heads/main/assets/kafe2.jpg", System.currentTimeMillis() - 200000),
+                        new StatusContentModel("https://raw.githubusercontent.com/rose137/KataKita/refs/heads/main/assets/kafe3.jpg", System.currentTimeMillis() - 100000)
                 )
         ));
 
